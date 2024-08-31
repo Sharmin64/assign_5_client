@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Exterior Hand Wash",
+        "description": "A thorough exterior wash using gentle hand-washing techniques to remove dirt, grime, and road salt. This service leaves your car's exterior shining and spotless.",
+        "image": "https://i.postimg.cc/6p5GGVt8/car-detailing-man-holds-microfiber-600nw-682966966.webp"
+    },
+    {
+        "title": "Interior Deep Cleaning",
+        "description": "A comprehensive cleaning of your car's interior, including vacuuming, steam cleaning, and wiping down all surfaces. We ensure your cabin is fresh and spotless.",
+        "image": "https://i.postimg.cc/bJ79Syzm/lovepik-car-interior-cleaning-wipe-picture-501692498.jpg"
+    },
+    {
+        "title": "Full Body Wax",
+        "description": "Protect your cars paint with our full-body wax service. This treatment adds a layer of protection against the elements while enhancing the vehicle's shine.",
+        "image": "https://i.postimg.cc/2yCF7HZW/gettyimages-185245890-612x612.jpg"
+    },
+    {
+        "title": "Engine Detailing",
+        "description": "Our engine detailing service removes grime, oil, and dirt from under the hood, improving the look and functionality of your engine bay.",
+        "image": "https://i.postimg.cc/CL8cQgqG/stock-photo-partial-view-mechanic-holding-wrench-while-inspecting-car-engine-compartment.jpg"
+    },
+    {
+        "title": "Tire & Wheel Cleaning",
+        "description": "Get your tires and wheels looking brand new with our specialized cleaning service. We remove brake dust and grime, leaving your wheels gleaming.",
+        "image": "https://i.postimg.cc/HxfQwr3f/istockphoto-1074106336-612x612.jpg"
+    },
+    {
+        "title": "Ceramic Coating",
+        "description": "Upgrade your vehicle's protection with our advanced ceramic coating. This service provides long-lasting shine and a durable shield against the elements.",
+        "image": "https://i.postimg.cc/7Zm0Bsm1/The-Pros-and-Cons-of-Ceramic-Coating-a-Car-1200x900.jpg"
+    }
+]
