@@ -1,22 +1,22 @@
 import { Outlet } from "react-router-dom";
 import Navber from "../ui/Navber";
-import { useState } from "react";
-
-interface Review {
-  rating: number;
-  feedback: string;
-}
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { addReview } from "../../redux/features/reviewsSlice";
+import Footer from "../ui/Footer";
 
 const MainLayout = () => {
-  const [reviews, setReviews] = useState<Review[]>([]);
+  const reviews = useAppSelector((state) => state.reviews.reviews);
+  const dispatch = useAppDispatch();
 
   const handleReviewSubmit = (rating: number, feedback: string) => {
-    setReviews([{ rating, feedback }, ...reviews]);
+    dispatch(addReview({ rating, feedback }));
   };
+
   return (
     <>
       <Navber />
       <Outlet context={{ reviews, handleReviewSubmit }} />
+      <Footer />
     </>
   );
 };

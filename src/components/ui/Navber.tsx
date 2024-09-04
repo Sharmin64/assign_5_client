@@ -10,7 +10,7 @@ const Navber = () => {
   };
   return (
     <>
-      <nav className="bg-gray-100 p-4 shadow-md w-full">
+      <nav className="fixed top-0 z-10 left-0 bg-gray-100 p-4 shadow-md w-full">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto">
           {/* Logo */}
           <Link to={"/"} className="text-lg font-bold">
