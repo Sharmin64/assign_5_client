@@ -6,6 +6,17 @@ export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({ baseUrl: apiBaseURL }),
   endpoints: (builder) => ({
+    // Fetch all services
+    fetchServices: builder.query({
+      query: (params) => ({
+        url: "api/services",
+        params,
+      }),
+    }),
+    // Fetch service details by ID
+    fetchServiceDetails: builder.query({
+      query: (id: string) => `api/services/${id}?`,
+    }),
     // User signup endpoint
     signupUser: builder.mutation({
       query: (userData) => ({
@@ -29,4 +40,9 @@ export const baseApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useSignupUserMutation, useLoginUserMutation } = baseApi;
+export const {
+  useFetchServicesQuery,
+  useFetchServiceDetailsQuery,
+  useSignupUserMutation,
+  useLoginUserMutation,
+} = baseApi;

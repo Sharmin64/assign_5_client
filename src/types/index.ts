@@ -22,3 +22,12 @@ export interface Category {
   name: string;
   image: string;
 }
+
+export interface IService {
+  services: [];
+  id: number;
+  name: string;
+  price: number;
+  duration: string;
+  description: string;
+}

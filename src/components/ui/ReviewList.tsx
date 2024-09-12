@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { useNavigate, useOutletContext } from "react-router-dom";
+import { useAppSelector } from "../../redux/hooks";
+import { selectIsLoggedIn } from "../../redux/features/userSlice";
 
 interface Review {
   rating: number;
@@ -16,8 +18,17 @@ const ReviewList: React.FC<ReviewListProps> = () => {
   const context = useOutletContext<{ reviews: Review[] } | null>();
   const [averageRating, setAverageRating] = useState<number | null>(null);
   const navigate = useNavigate();
+  const isLoggedIn = useAppSelector(selectIsLoggedIn);
 
   const reviews = context?.reviews || [];
+
+  const handleSeeAllReviews = () => {
+    if (isLoggedIn) {
+      navigate("/latest-review-list");
+    } else {
+      navigate("/login");
+    }
+  };
 
   useEffect(() => {
     if (reviews.length > 0) {
@@ -69,7 +80,7 @@ const ReviewList: React.FC<ReviewListProps> = () => {
           <div className="text-center mt-8">
             <button
               className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300"
-              onClick={() => navigate("/latest-review-list")}
+              onClick={handleSeeAllReviews}
             >
               See All Reviews
             </button>

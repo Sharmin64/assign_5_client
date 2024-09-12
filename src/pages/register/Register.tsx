@@ -92,7 +92,6 @@ const Register = () => {
               className="w-full py-3 px-6 bg-[#5656ff] text-white font-bold rounded-lg hover:bg-[#4343cc] hover:shadow-xl transition-transform duration-200 transform"
               disabled={isLoading}
             >
-              {" "}
               {isLoading ? "Signing Up..." : "Sign Up"}
             </button>
             {isError && (
