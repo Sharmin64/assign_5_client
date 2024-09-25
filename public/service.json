@@ -1,0 +1,74 @@
+[
+    {
+      "name": "Car Washing powder",
+      "description": "Professional car washing service",
+      "price": 50,
+      "duration": 60,
+      "isDeleted": false,
+      "createdAt": "2024-08-20T02:05:28.995+00:00",
+      "updatedAt": "2024-08-20T02:05:28.995+00:00"
+    },
+    {
+      "name": "Car Wash",
+      "description": "Professional car washing service",
+      "price": 800,
+      "duration": 60,
+      "isDeleted": false,
+      "createdAt": "2024-07-30T05:06:02.541+00:00",
+      "updatedAt": "2024-07-30T05:06:02.541+00:00"
+    },
+    {
+      "name": "Car Wash",
+      "description": "Professional car washing service",
+      "price": 700,
+      "duration": 60,
+      "isDeleted": false,
+      "createdAt": "2024-07-30T04:54:44.139+00:00",
+      "updatedAt": "2024-07-30T04:54:44.139+00:00"
+    },
+    {
+      "name": "Car Wash",
+      "description": "Professional car washing service",
+      "price": 7000,
+      "duration": 60,
+      "isDeleted": false,
+      "createdAt": "2024-07-30T04:49:18.957+00:00",
+      "updatedAt": "2024-07-30T04:49:18.957+00:00"
+    },
+    {
+      "name": "Car Wash",
+      "description": "Professional car washing service",
+      "price": 440,
+      "duration": 60,
+      "isDeleted": true,
+      "updatedAt": "2024-07-30T05:18:00.375+00:00"
+    },
+    {
+      "name": "Oil Change",
+      "description": "Regular engine oil change service",
+      "price": 30,
+      "duration": 30,
+      "isDeleted": false,
+      "createdAt": "2024-06-15T12:00:00Z",
+      "updatedAt": "2024-06-15T12:00:00Z"
+    },
+    {
+      "name": "Tire Rotation",
+      "description": "Rotation of vehicle tires",
+      "price": 20,
+      "duration": 45,
+      "isDeleted": false,
+      "createdAt": "2024-06-15T12:00:00Z",
+      "updatedAt": "2024-06-15T12:00:00Z"
+    },
+    {
+      "name": "Car Wash",
+      "description": "Professional car washing service",
+      "price": 50,
+      "duration": 60,
+      "isDeleted": false,
+      "createdAt": "2024-06-15T12:00:00Z",
+      "updatedAt": "2024-06-15T12:00:00Z"
+    }
+  ]
+  

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useDispatch } from "react-redux";
-import Navber from "../../components/ui/Navber";
+import Navber from "../sharedPage/Navber";
 import { useLoginUserMutation } from "../../redux/api/baseApi";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";

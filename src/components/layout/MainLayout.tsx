@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navber from "../ui/Navber";
+import Navber from "../../pages/sharedPage/Navber";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { addReview } from "../../redux/features/reviewsSlice";
-import Footer from "../ui/Footer";
+import Footer from "../../pages/sharedPage/Footer";
 
 const MainLayout = () => {
   const reviews = useAppSelector((state) => state.reviews.reviews);
@@ -16,7 +16,9 @@ const MainLayout = () => {
     <>
       <Navber />
       <Outlet context={{ reviews, handleReviewSubmit }} />
-      <Footer />
+      <div className="mt-44">
+        <Footer />
+      </div>
     </>
   );
 };

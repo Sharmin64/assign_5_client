@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import iconImage from "../../assets/icons/car-wash.png";
 import { useNavigate } from "react-router-dom";
 
@@ -27,10 +27,10 @@ const Navber = () => {
 
   return (
     <>
-      <nav className="fixed top-0 z-10 left-0 bg-gray-100 p-4 shadow-md w-full">
+      <nav className="fixed top-0 z-10 left-0 bg-gray-100 p-5 shadow-md w-full ">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto">
           {/* Logo */}
-          <Link to={"/"} className="text-lg font-bold">
+          <Link to="/" className="text-lg font-bold">
             <img src={iconImage} alt="" className="w-10" />
           </Link>
 
@@ -85,7 +85,7 @@ const Navber = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className="cursor-pointer text-[#011794] font-semibold hover:text-blue-500 flex items-center"
+                className="cursor-pointer text-[#011794] font-semibold hover:text-blue-500 flex items-center  transition-all delay-[0.5s] duration-500 ease-in"
               >
                 Service
                 <svg
@@ -105,33 +105,41 @@ const Navber = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="absolute left-0 hidden opacity-0 transform scale-95 group-hover:scale-100 group-hover:opacity-100 group-hover:block group-focus-within:block bg-white rounded-lg w-40 mt-2 mr-10 shadow-lg z-20 transition-all duration-300 ease-out"
+                className="absolute left-0 hidden opacity-0 transform scale-y-95 origin-top-right group group-focus:scale-y-100 group-hover:opacity-100 group-hover:block group-focus-within:block bg-white rounded-lg w-40 mt-2 mr-10 shadow-lg z-20"
               >
                 <li>
-                  <Link
+                  <NavLink
                     to="/service"
-                    className="block px-4 py-2 text-[#16150b] font-semibold hover:bg-gray-200"
+                    className="block px-4 py-2 text-[#16150b] font-semibold hover:bg-gray-200 transition-transform duration-300 ease-linear"
                   >
-                    Service
-                  </Link>
+                    Service Page
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
-                    to="/service-details"
-                    className="block px-4 py-2 text-[#302d19] font-semibold hover:bg-gray-200"
+                  <NavLink
+                    to="/serviceDetails"
+                    className="block px-4 py-2 text-[#16150b] font-semibold hover:bg-gray-200 transition-transform duration-300 ease-linear"
                   >
                     Service Details
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/booking"
                 className="text-[#011794] font-semibold hover:text-blue-500"
               >
                 Booking
-              </Link>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard"
+                className="text-[#011794] font-semibold hover:text-blue-500"
+              >
+                Dashboard
+              </NavLink>
             </li>
             {isAuthenticated ? (
               <li>
@@ -154,14 +162,6 @@ const Navber = () => {
                 </Link>
               </li>
             )}
-            <li>
-              <Link
-                to="/register"
-                className="text-[#011794] font-semibold hover:text-blue-500"
-              >
-                Register
-              </Link>
-            </li>
             <li>
               <Link
                 to="/latest-review-list"

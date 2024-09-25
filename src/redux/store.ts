@@ -1,6 +1,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import reviewsReducer from "../redux/features/reviewsSlice";
 import storage from "redux-persist/lib/storage";
+import userReducer from "../redux/features/userSlice";
+import bookingReducer from "../redux/features/bookingSlice";
+import { baseApi } from "./api/baseApi";
 import {
   FLUSH,
   PAUSE,
@@ -11,18 +14,17 @@ import {
   REGISTER,
   REHYDRATE,
 } from "redux-persist";
-import userReducer from "../redux/features/userSlice";
-import { baseApi } from "./api/baseApi";
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["user", "reviews"],
+  whitelist: ["user", "reviews",'booking'],
 };
 
 const rootReducer = combineReducers({
   reviews: reviewsReducer,
   user: userReducer,
+  booking: bookingReducer,
   [baseApi.reducerPath]: baseApi.reducer,
 });
 

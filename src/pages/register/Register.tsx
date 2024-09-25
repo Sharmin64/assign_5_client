@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // import { useSelector } from "react-redux";
-import Navber from "../../components/ui/Navber";
+import Navber from "../sharedPage/Navber";
 import { useState } from "react";
 // import { signupUser } from "../../redux/features/userSlice";
 // import { RootState } from "../../redux/store";
